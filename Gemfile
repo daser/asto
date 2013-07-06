@@ -25,6 +25,9 @@ gem 'jquery-rails'
 gem 'community_engine'
 gem 'multi_json'
 gem 'nokogiri', '~> 1.5.0'
+gem "capistrano"
+gem 'faraday', '~> 0.7.3'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
