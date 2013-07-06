@@ -1,0 +1,318 @@
+%header{:id=>"top","data-stellar-background-ratio"=>'0'}
+    %div{:class=>"container home"}
+        %div{:class=>"flexslider home"}
+            %ul{:class=>"slides"}            
+                %li
+                    %div{:class=>"span7 animated fadeInLeftBig"}
+                        = image_tag("responsive.png") 
+                    %div{:class=>"span4 margintop10p animated fadeInDownBig"}
+                        %h1
+                            %i{:class=>"icon-tablet"}
+                            %i{:class=>"icon-mobile-phone"}
+                            %i{:class=>"icon-desktop"}
+                            %br full responsive
+
+                %li{:class=>"margin5"}
+                    %div{:class=>"span6 animated fadeInLeftBig",:id=>"main-media"}
+                        %iframe{:src=>"http://player.vimeo.com/video/56072786",:width=>"580",:height=>"240",:frameborder=>"0"}
+                    %div{:class=>"span5"}
+                        %h1 a complete parallex template for your needs
+
+                %li{:class=>"margintop10p"}
+                    %h1
+                        %i{:class=>"icon-tablet"}
+                        %i{:class=>"icon-mobile-phone"}
+                        %i{:class=>"icon-desktop"}
+                        %br and yes its full responsive
+                %li{:class=>"margintop10p"}
+                    %h1
+                        %i{:class=>"icon-eye-open icon-2x"}
+                        %br oh! did i mentioned, its retina ready...
+
+            %div{:class=>"social-header hidden-phone"}
+                = link_to "", "#", :class=>"social-network sn2 behance"
+                = link_to "", "#", :class=>"social-network sn2 facebook"
+                = link_to "", "#", :class=>"social-network sn2 pinterest"
+                = link_to "", "#", :class=>"social-network sn2 flickr"
+                = link_to "", "#", :class=>"social-network sn2 dribble"
+                = link_to "", "#", :class=>"social-network sn2 lastfm"
+                = link_to "", "#", :class=>"social-network sn2 forrst"
+                = link_to "", "#", :class=>"social-network sn2 xing"
+
+        %div{:id=>"home-arrow",:class=>"hidden-phone"}
+            = link_to "#features" do
+                %i{:class=>"icon-double-angle-down icon-3x",:id=>"iconHome"}
+
+
+
+%section{:id=>"features"}
+    %div{:id=>"features-banner", "data-stellar-background-ratio"=>"0"}
+        %h1 Our Features
+        %p{:class=>"sub-heading-support"}WHY ARE WE THE BEST
+    %div{:class=>"container"}
+        %div{:class=>"row margintop20"}
+            %div{:class=>"span4"}
+                %h2
+                    %i{:class=>"icon-briefcase"} 1st Feature
+                %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh.
+            %div{:class=>"span4"}            
+                %h2
+                    %i{:class=>"icon-bullhorn"} 2nd Feature
+                %p  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh.
+
+            %div{:class=>"span4"}
+                %h2
+                    %i{:class=>"icon-bar-chart"}3rd Feature
+                %p  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh.
+        %hr{:class=>"line"}
+        %div{:class=>"row"}
+            %div{:class=>"span12"}
+                %ul{:class=>"thumbnails"}
+                    %li{:class=>"span3"}
+                        %div{:class=>"thumbnail border-left features"}
+                            %div{:class=>"feature-icon"}
+                                %i{:class=>"icon-cloud-download icon-10x color1"}
+                            %h4 Cloud Computing
+                            %p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus.
+                    %li{:class=>"span3"}
+                        %div{:class=>"thumbnail border-none"}
+                            %div{:class=>"feature-icon"}
+                                %i{:class=>"icon-dashboard icon-10x color2"}
+                            %h4 Dashboard
+                            %p  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus.
+                    %li{:class=>"span3"}
+                        %div{:class=>"thumbnail border-right"}
+                            %div{:class=>"feature-icon"}
+                                %i{:class=>"icon-dashboard icon-10x color3"}
+                            %h4 Download
+                            %p  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus
+
+                    %li{:class=>"span3"}
+                        %div{:class=>"thumbnail border-right"}
+                            %div{:class=>"feature-icon"}
+                                %i{:class=>"icon-dashboard icon-10x color4"}
+                            %h4 Security
+                            %p  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus
+                 
+%section{:id=>"support", :class=>"paddingbottom40"}
+    %div{:id=>"support-banner", "data-stellar-background-ratio"=>"0.5"}
+        %div{:id=>"carousel_fade_1",:class=>"carousel slide carousel-fade"}
+            %div{:class=>"carousel-inner"}
+                %div{:class=>"item active"}
+                    %h1
+                        %i{:class=>"icon-comments"}
+                        Spectacular Support
+                    %p{:class=>"sub-heading-support"}
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus.
+
+                %div{:class=>"item"}
+                    %h1
+                        %i{:class=>"icon-double-angle-up"}
+                        Parallax Effect
+                    %p{:class=>"sub-heading-support"}
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus.
+
+
+                %div{:class=>"item"}
+                    %h1
+                        %i{:class=>"icon-desktop"}
+                        Retina Ready
+                    %p{:class=>"sub-heading-support"}
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus.
+            %button{:class=>"carousel-control left car-button","href"=>"#carousel_fade_1","data-slide"=>"prev"}
+                %i{:class=>"icon-chevron-left"}
+            %button{:class=>"carousel-control right car-button","href"=>"#carousel_fade_1","data-slide"=>"next"}
+                %i{:class=>"icon-chevron-right"}
+
+    %div{:class=>"container"}
+        %div{:class=>"row center"}
+            %div{:class=>"span4 margintop20"}
+                %div{:class=>"row left"}
+                    %div{:class=>"span1"}
+                        %i{:class=>"icon-phone support-icon color1"}
+                    %div{:class=>"span3"}
+                        %h2 24/7/365
+                        %ul{:class=>"unstyled"}
+                            %li
+                                %i{:class=>"icon-ok"} 
+                                Unlimited support in minutes
+                            %li
+                                %i{:class=>"icon-ok"} 
+                                From your dashboard
+                            %li
+                                %i{:class=>"icon-ok"} 
+                                Ask us about anything
+            %div{:class=>"span4 margintop20"}
+                %div{:class=>"row left"}
+                    %div{:class=>"span1"}
+                        %i{:class=>"icon-comments support-icon color2"}
+                    %div{:class=>"span3"}
+                        %h2 Live Chat
+                        %ul{:class=>"unstyled"}
+                            %li 
+                                %i{:class=>"icon-ok"}
+                                Unlimited support in minutes
+                            %li
+                                %i{:class=>"icon-ok"}
+                                From your  dashboard
+                            %li
+                                %i{:class=>"icon-ok"}
+                                Ask us about anything
+
+            %div{:class=>"span4 margintop20"}
+                %div{:class=>"row left"}
+                    %div{:class=>"span1"}
+                        %i{:class=>"icon-group support-icon color3"}
+                    %div{:class=>"span3"}
+                        %h2 Community
+                        %ul{:class=>"unstyled"}
+                            %li 
+                                %i{:class=>"icon-ok"}
+                                Unlimited support in minutes
+                            %li
+                                %i{:class=>"icon-ok"}
+                                From your  dashboard
+                            %li
+                                %i{:class=>"icon-ok"}
+                                Ask us about anything
+
+            %div{:class=>"span4 margintop40"}
+                %div{:class=>"row left"}
+                    %div{:class=>"span1"}
+                        %i{:class=>"icon-facetime-video support-icon"}
+                    %div{:class=>"span3"}
+                        %h2 Tutorials
+                        %ul{:class=>"unstyled"}
+                            %li 
+                                %i{:class=>"icon-ok"}
+                                Unlimited support in minutes
+                            %li
+                                %i{:class=>"icon-ok"}
+                                From your  dashboard
+                            %li
+                                %i{:class=>"icon-ok"}
+                                Ask us about anything
+
+            %div{:class=>"span4 margintop40"}
+                %div{:class=>"row left"}
+                    %div{:class=>"span1"}
+                        %i{:class=>"icon-book support-icon"}
+                    %div{:class=>"span3"}
+                        %h2 Manual
+                        %ul{:class=>"unstyled"}
+                            %li 
+                                %i{:class=>"icon-ok"}
+                                Unlimited support in minutes
+                            %li
+                                %i{:class=>"icon-ok"}
+                                From your  dashboard
+                            %li
+                                %i{:class=>"icon-ok"}
+                                Ask us about anything
+
+            %div{:class=>"span4 margintop40"}
+                %div{:class=>"row left"}
+                    %div{:class=>"span1"}
+                        %i{:class=>"icon-file support-icon"}
+                    %div{:class=>"span3"}
+                        %h2 Docs
+                        %ul{:class=>"unstyled"}
+                            %li 
+                                %i{:class=>"icon-ok"}
+                                Unlimited support in minutes
+                            %li
+                                %i{:class=>"icon-ok"}
+                                From your  dashboard
+                            %li
+                                %i{:class=>"icon-ok"}
+                                Ask us about anything
+
+
+
+
+%section{:class=>"portfolio home-portfolio"}
+    %div{:class=>"container",:id=>"portfolio"}
+        %div{:class=>"row"}
+            %div{:class=>"span12 center"}
+                %h1{:class=>"big-heading"} Portfolio
+                %h4{:class=>"sub-heading"} see some of our cool projects...
+        %div{:class=>"row"}
+            %div{:class=>"span12"}
+                %div{:id=>"filters_container"}
+                    %ul{:id=>"filters"}
+                        %li= link_to "All", "#",:class=>"active","data-filter"=>"*"
+                        %li{:class=>"separator"} /
+                        %li= link_to "Video", "#","data-filter"=>".video"
+                        %li{:class=>"separator"} /
+                        %li= link_to "Art", "#","data-filter"=>".art"
+                        %li{:class=>"separator"} /
+                        %li= link_to "Illustration", "#","data-filter"=>".illustration"
+                        %li{:class=>"separator"} /
+                        %li= link_to "Print", "#","data-filter"=>".print"
+                        %li{:class=>"separator"} /
+                        %li= link_to "Web", "#","data-filter"=>".web"
+        %div{:class=>"row",:id=>"portfolio-container"}
+            %div{:class=>"span3 project art"}
+                = image_tag("project1.jpg", :class=>"project-img")
+                %span{:class=>"overlay"}
+                %div{:class=>"cnt"}
+                    %h5 Image
+                    = link_to "View details",'= image_tag("project1.jpg")',:class=>"fancybox-media btn btn-normal", "data-title-id"=>"title-01",:rel=>"portfolio"
+                %div{:class=>"info hidden",:id=>"title-01"}
+                    %h2 Image Details
+                    %div{:class=>"fancybody"}
+                        Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem = link_to "lacinia quam","#" venenatis vestibulum. Maecenas sed diam eget risus varius.
+
+            %div{:class=>"span3 project web"}
+                = image_tag("landscape-heart.jpg", :class=>"project-img") 
+                %span{:class=>"overlay"}
+                %div{:class=>"cnt"}
+                    %h5 Project
+                    = link_to "View details","#", :class=>"btn btn-normal"
+
+            %div{:class=>"span3 project video"}
+                = image_tag("project1.jpg", :class=>"project-img") 
+                %span{:class=>"overlay"}
+                %div{:class=>"cnt"}
+                    %h5 Video
+                    = link_to "View details","http://vimeo.com/24030911","data-title-id"=>"title-03",:rel=>"portfolio"
+                %div{:id=>"title-03",:class=>"info hidden"}
+                    %h2 Image Details
+                    %div{:class=>"fancybody"}
+                        Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem  venenatis vestibulum. Maecenas sed diam eget risus varius.
+            %div{:class=>"span3 project web print"}
+                = image_tag("landscape-heart.jpg", :class=>"project-img") 
+                %span{:class=>"overlay"}
+                %div{:class=>"cnt"}
+                    %h5 Project
+                    = link_to "View details","#",:class=>"btn btn-normal"
+
+            %div{:class=>"span3 project art print"}
+                = image_tag("landscape-heart.jpg", :class=>"project-img")
+                %span{:class=>"overlay"}
+                %div{:class=>"cnt"}
+                    %h5 Project
+                    =link_to "View details", "#", :class=>"btn btn-normal"
+
+            %div{:class=>"span3 project art web"}
+                = image_tag("landscape-heart.jpg", :class=>"project-img")
+                %span{:class=>"overlay"}
+                %div{:class=>"cnt"}
+                    %h5 Project
+                    =link_to "View details", "#", :class=>"btn btn-normal"
+
+
+            %div{:class=>"span3 project print web"}
+                = image_tag("project1.jpg", :class=>"project-img")
+                %span{:class=>"overlay"}
+                %div{:class=>"cnt"}
+                    %h5 Project
+                    =link_to "View details", "#", :class=>"btn btn-normal"
+
+
+            %div{:class=>"span3 project project web"}
+                = image_tag("project1.jpg", :class=>"project-img")
+                %span{:class=>"overlay"}
+                %div{:class=>"cnt"}
+                    %h5 Project
+                    =link_to "View details", "#", :class=>"btn btn-normal"

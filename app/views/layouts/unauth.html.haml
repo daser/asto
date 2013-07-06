@@ -1,0 +1,109 @@
+%html
+  %head
+    %title Astorial Platform
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'> 
+    = stylesheet_link_tag 'bootstrap'
+    = stylesheet_link_tag  'font-awesome' , :media => 'all'
+    = stylesheet_link_tag  'jquery.fancybox', :media => 'all'
+    = stylesheet_link_tag  'jquery.fancybox-thumbs'
+    = stylesheet_link_tag  'animate' 
+    = stylesheet_link_tag  'isotope'
+    = stylesheet_link_tag  'style'
+    = stylesheet_link_tag  'style-responsive'
+    = stylesheet_link_tag   'application', :media => 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags 
+  %body
+    %div{:class=>"navbar-wrapper"}
+      %div{:class=>"navbar navbar-fixed-top",:id=>"navigation"}
+        %div{:class=>"navbar-inner"}
+          %div{:class=>"container"}
+            %button{:type=>"button", :class=>"btn btn-navbar",:data=>{:toggle=>'collapse', :target=>'.nav-collapse'}}
+              %span{:class=>"icon-bar"}
+              %span{:class=>"icon-bar"}
+              %span{:class=>"icon-bar"}
+            = link_to(image_tag("logo.png", :id=>"logokhan", :width=>"150"),"/", :class => 'brand')
+            %div{:class=>"nav-collapse collapse"}
+              %ul{:class=>"nav pull-right"}
+                %li{:class=>"active"}= link_to "Home", "#top"
+                %li{:class=>""}= link_to "Features", "#features"
+                %li{:class=>""}= link_to "Services", "#support"
+                %li{:class=>""}= link_to "Testimonials", "#testimonials"
+                %li{:class=>""}= link_to "Sign Up", "/signup"
+                %li{:class=>""}= link_to "Sign In", "/login"
+
+    %div{:id=>"wrap"}
+      = yield 
+      %section{:id=>"bottom",:class=>"paddingbot20"}
+        %div{:class=>"row center"}
+          %h2 as seen on the
+        %div{:class=>"container"}
+          %div{:class=>"row center"}
+            %div{:class=>"as-seen"}
+              %div{:class=>"span2"}
+                = image_tag("client-1.png")
+              %div{:class=>"span2"}
+                = image_tag("client-2.png")
+              %div{:class=>"span2"}
+                = image_tag("client-3.png")
+              %div{:class=>"span2"}
+                = image_tag("client-4.png")
+              %div{:class=>"span2"}
+                = image_tag("client-5.png")
+              %div{:class=>"span2"}
+                = image_tag("client-6.png")
+
+    %div{:id=>"push"}
+
+    %footer{:id=>"footer"}
+      %div{:class=>"container"}
+        %div{:class=>"row"}            
+          %div{:class=>"span4"}
+            = image_tag("logo.png")
+            %p
+              %br
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+              %p{:class=>"copyright"}
+                © 2013 Magnolia Projects
+
+          %div{:class=>"span2"}
+            %h2 links
+            %ul{:class=>"unstyled footer-links"}
+              %li= link_to "About Us", "#",:class=>"flink"
+              %li= link_to "The Team", "#", :class=>"flink"
+              %li= link_to "Blog", "#", :class=>"flink"
+              %li= link_to "Contact", "#", :class=>"flink"
+              %li= link_to "Privacy Policy", "#", :class=>"flink"
+              %li= link_to "Terms of Use", "#", :class=>"flink"
+          %div{:class=>"span3"}
+            %h2 subscribe
+            = link_to "", "#", :class=>"social-network sn2 behance"
+            = link_to "", "#", :class=>"social-network sn2 facebook"
+            = link_to "", "#", :class=>"social-network sn2 pinterest"
+            = link_to "", "#", :class=>"social-network sn2 flickr"
+            = link_to "", "#", :class=>"social-network sn2 dribble"
+            = link_to "", "#", :class=>"social-network sn2 lastfm"
+            = link_to "", "#", :class=>"social-network sn2 forrst"
+            = link_to "", "#", :class=>"social-network sn2 xing"
+          %div{:class=>"span3"}
+            %h2{:class=>"center"} 
+              %i{:class=>"icon-twitter"}
+            %ul{:id=>"twitter",:class=>"unstyled"}
+
+    = javascript_include_tag "jquery" 
+    = javascript_include_tag "modernizr" 
+    = javascript_include_tag "bootstrap" 
+    = javascript_include_tag "jquery.fitvids" 
+    = javascript_include_tag "jquery.easing.1.3" 
+    = javascript_include_tag "twitter" 
+    = javascript_include_tag "jquery.fancybox.pack" 
+    = javascript_include_tag "jquery.fancybox-thumbs" 
+    = javascript_include_tag "jquery.fancybox-media" 
+    = javascript_include_tag "stellar" 
+    = javascript_include_tag "nicescroll.min" 
+    = javascript_include_tag "jquery.isotope.min" 
+    = javascript_include_tag "custom" 
+    = javascript_include_tag "custom-home" 
+    = javascript_include_tag "portfolio" 
+    = javascript_include_tag "jquery.flexslider" 
+    = javascript_include_tag "retina" 
