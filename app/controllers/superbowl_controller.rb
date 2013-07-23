@@ -14,7 +14,8 @@ def approve
   	  	    
             user.update_attribute("approve", 1)
             #UserMailer.granted(@user).deliver
-           
+            UserNotifier.payment_mail(user).deliver
+
 
 #-------------------------------------------------
    #         invi = Invitation.find_by_email(user.email)
@@ -29,7 +30,7 @@ def approve
 #-------------------------------------------------------
             #redirect_to root_url, :notice => "Account Activated! You can now login"
             flash[:notice] = 'User Approved'
-          	redirect_to "superbowl/home"
+          	redirect_to "/superbowl/home"
 end
 
 def disapprove
@@ -56,8 +57,10 @@ def confirmuser
             	#UserMailer.successful_registration(@user).deliver
             	#redirect_to root_url, :notice => "Account Activated! You can now login"
             #UserMailer.activation_email(user).deliver
+            UserNotifier.confirm_notification(user).deliver
+
             flash[:notice] = 'User Granted Access'
-            redirect_to "superbowl/confirm"
+            redirect_to "/superbowl/confirm"
 end
 
 def generate_random_token
