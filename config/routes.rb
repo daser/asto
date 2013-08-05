@@ -1,6 +1,8 @@
 Asto::Application.routes.draw do
 
 
+  get "users/signup_completed"
+
   get "superbowl/confirm"
   get "superbowl/home"
   match "/approve/:id" => "superbowl#approve"

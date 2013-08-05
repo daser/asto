@@ -1,0 +1,61 @@
+%style{:type => "text/css"}
+  html,body{background-color: #eee;}
+  body {padding-top: 0px;}
+  == .formrails{margin:auto;width:900px;}
+  == .formrails .container{width:900px;}
+  == .container > .content {background-color: #fff;padding: 20px;margin: 0 -20px;-webkit-border-radius: 10px 10px 10px 10px;-moz-border-radius: 10px 10px 10px 10px;border-radius: 10px 10px 10px 10px;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);box-shadow: 0 1px 2px rgba(0,0,0,.15);}
+  == .login-form {margin-left: 65px;} 
+  legend{margin-right: -50px;font-weight: bold;color: #404040;}
+  == .lightblue {background-color: none;}
+
+%section{:id=>"features"}
+  %div{:id=>"features-banner","data-stellar-background-ratio"=>"0"}
+    %div{:class=>"formrails"}
+      %div{:class=>"container"}
+        %div{:class=>"content"}
+          %div{:class=>"row"}
+            %div{:class=>"login-form"}
+              %h2 Sign Up: Get Involved
+              %hr
+              = error_messages_for :user
+              = form_for :user, :url => users_path do |f|
+                %div{:class=>"row-fluid"}
+                  %div{:class=>"span12 bgcolor"}
+                    %label Personal Details
+                %div{:class=>"row-fluid"}
+                  %div{:class=>"span6 bgcolor"}
+                    = f.text_field :fname, :placeholder=>"First Name", :class=>"span12 input-mini"
+                  %div{:class=>"span6 bgcolor"}
+                    = f.text_field :lname, :placeholder=>"Last Name", :class=>"span12 input-mini" 
+                %div{:class=>"row-fluid"}
+                  %div{:class=>"span6 bgcolor"}
+                    = f.text_field :mname, :placeholder=>"Middle Name", :class=>"span12 input-mini"
+                  %div{:class=>"span6 bgcolor"}
+                    = f.text_field :mobile, :placeholder=>"Mobile", :class=>"span12 input-mini"    
+                %div{:class=>"row-fluid"}
+                  %div{:class=>"span12 bgcolor"}
+                    %label{"for"=>"user_birthdate"}
+                      =:birthday.l
+                    = date_select :user, :birthday,{:start_year => (Time.now.year - configatron.max_age), :end_year => (Time.now.year - configatron.min_age)}
+
+                %div{:class=>"row-fluid"}
+                  %div{:class=>"span12 bgcolor"}
+                    %label Business Details
+                    = f.text_field :coyname, :placeholder=>"Company Name", :class=>"span12 input-mini"
+                %div{:class=>"row-fluid"}
+                  %div{:class=>"span6 bgcolor"}
+                    = f.text_field :position, :placeholder=>"Position", :class=>"span12 input-mini"
+                  %div{:class=>"span6 bgcolor"}
+                    = f.text_field :coyemail, :placeholder=>"Company Email", :class=>"span12 input-mini"
+                %div{:class=>"row-fluid"}
+                  %div{:class=>"span12 bgcolor"}
+                    %label Login Details
+                %div{:class=>"row-fluid"}
+                  %div{:class=>"span6 bgcolor"}
+                    = f.text_field :login, :placeholder=>"Username", :class=>"span12 input-mini"
+                  %div{:class=>"span6 bgcolor"}
+                    = f.text_field :email, :placeholder=>"Email Address", :class=>"span12 input-mini"  
+                    = hidden_field_tag :inviter_id, params[:inviter_id]
+                    = hidden_field_tag :inviter_code, params[:inviter_code]
+                = submit_tag "Register for Astoria", :class=>"btn primary" 
+              %div{:class=>"span4"}

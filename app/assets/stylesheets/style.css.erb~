@@ -684,7 +684,7 @@ a.post-entry:hover {
 
 /*Support*/
 #support-banner {
-    background-image:url(<%= asset_path 'obisky2.jpg' %>);
+    background-image:url(<%= asset_path 'bg_blue.jpg' %>);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-color:#F0FCFF;

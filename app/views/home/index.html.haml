@@ -228,7 +228,7 @@
                                 Ask us about anything
 
 
-
+%section{:class=>""}
 
 %section{:class=>"portfolio home-portfolio"}
     %div{:class=>"container",:id=>"portfolio"}
@@ -316,3 +316,202 @@
                 %div{:class=>"cnt"}
                     %h5 Project
                     =link_to "View details", "#", :class=>"btn btn-normal"
+
+
+%section{:id=>"testimonials"}
+    %div{:id=>"testimonials-background", "data-stellar-background-ratio"=>'0.5'}
+        %h1
+            %i{:class=>"icon-thumbs-up"}
+        %h2{:class=>"sub-heading-support"}What others say about us
+    %div{:class=>"container"}
+        %div{:class=>"row center margintop40"}
+            %div{:id=>"carousel_fade_2", :class=>"span4 carousel slide carousel-fade"}
+                %div{:class=>"carousel-inner"}
+                    %div{:class=>"item testimonial active"}
+                        = image_tag("face-1.png")
+                        %h4 Fading Testimonials
+                        %p
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                    %div{:class=>"item testimonial"}
+                        = image_tag("face-2.png")
+                        %h4 Fading Testimonials
+                        %p 
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                    %div{:class=>"item testimonial"}
+                        = image_tag("face-3.png")
+                        %h4 Fading Testimonials
+                        %p
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+
+                %button{:class=>"carousel-control left car-button","href"=>"#carousel_fade_2","data-slide"=>"prev"}
+                    %i{:class=>"icon-chevron-left"}
+                %button{:class=>"carousel-control right car-button","href"=>"#carousel_fade_2","data-slide"=>"next"}
+                    %i{:class=>"icon-chevron-right"}
+            %div{:id=>"carousel_vertical_testimonial" ,:class=>"span4 carousel slide vertical"}
+                %div{:class=>"carousel-inner"}
+                    %div{:class=>"item testimonial active"}
+                        = image_tag("face-1.png")
+                        %h4 Sliding Testimonials
+                        %p
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                    %div{:class=>"item testimonial"}
+                        = image_tag("face-3.png")
+                        %h4 Sliding Testimonials
+                        %p
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                    %div{:class=>"item testimonial"}
+                        = image_tag("face-2.png")
+                        %h4 Sliding Testimonials
+                        %p
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                %button{:class=>"carousel-control left car-button","href"=>"#carousel_fade_2","data-slide"=>"prev"}
+                    %i{:class=>"icon-chevron-left"}
+                %button{:class=>"carousel-control right car-button","href"=>"#carousel_fade_2","data-slide"=>"next"}
+                    %i{:class=>"icon-chevron-right"}
+            %div{:class=>"span4"}
+                %div{:class=>"item testimonial active"}
+                    = image_tag("face-1.png")
+                    %h4 Static
+                    %p
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+
+%section{:id=>"call-to-action",:class=>"margintop20 marginbot20"}
+    %div{:class=>"call-to-action-link"}
+        =link_to "Buy it for your Next Project", "#"
+
+%section{:id=>"news", :class=>"paddingbottom40"}
+    %div{:class=>"container"}
+        %div{:class=>"row center"}
+            %div{:class=>"span12"}
+                %h1{:class=>"big-heading"} Latest News
+                %p Curabitur nisi mi, tincidunt a vehicula non, euismod sed felis
+
+        %div{:class=>"row margintop40"}
+            %div{:class=>"span6 left shadowbox homepage-post"}
+                %div{:class=>"post-img picture"}
+                    = image_tag("blog2.jpg")
+                    %div{:class=>"overlay"}
+                        %div{:class=>"op"}
+                        %ul{:class=>"icons"}
+                            %li
+                                %span{:class=>"bg"}
+                                = link_to "", "#", :class=>"icon-link"
+                %div{:class=>"post"}                             
+                    %div{:class=>"headline"}
+                        %h2{:class=>"muted"} news heading...
+                    %div{:class=>"post-meta"}
+                        %h2{:class=>"big-h2-heading"}
+                            %i{:class=>"icon-calendar"}
+                            %br August
+                    %div{:class=>"post-content margintop"}
+                        %div{:class=>"post-description"}
+                            %p
+                                Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim bibendum tempus.
+            %div{:class=>"span6 left shadowbox homepage-post"}
+                %div{:class=>"post-img picture"}
+                    = image_tag("blog2.jpg")
+                    %div{:class=>"overlay"}
+                        %div{:op=>"op"}
+                        %ul{:class=>"icons"}
+                            %li
+                                %span{:class=>"bg"}
+                                = link_to "","#",:class=>"icon-link"
+                %div{:class=>"post"}
+                    %div{:class=>"headline"}
+                        %h2{:class=>"muted"}post heading ...
+                    %div{:class=>"post-meta"}
+                        %h2{:class=>"big-h2-heading"}
+                            %i{:class=>"icon-calendar"}
+                            %br March
+                    %div{:class=>"post-content margintop"}
+                        %div{:class=>"post-description"}
+                            %p
+                                Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim bibendum tempus.
+        %hr{:class=>"line"}
+
+        %div{:class=>"row"}
+            %div{:class=>"span12 center"}
+                %h1{:class=>"big-heading"} Pricing
+                %h4{:class=>"sub-heading"} clean pricing tables of every size
+        %div{:class=>"row",:id=>"pricing"}
+            %div{:class=>"span3"}
+                %div{:class=>"price-plan price-plan-business"}
+                    %h2 FREE
+                    %div{:class=>"price"}
+                        %div{:class=>"inside"}
+                            %span{:class=>"super"}$
+                            %span{:class=>"amt"}0
+                            %span{:class=>"sub"}mo
+                    %div{:class=>"info"}
+                        %ul
+                            %li{:class=>"bold"} Full Email Support
+                            %li Unlimited User Interactions
+                            %li{:class=>"signup"}
+                                = link_to "SIGN UP", "#"
+            %div{:class=>"span3"}
+                %div{:class=>"price-plan"}
+                    %h2 Starter
+                    %div{:class=>"price"}
+                        %div{:class=>"inside"}
+                            %span{:class=>"super"}$
+                            %span{:class=>"amt"}8
+                            %span{:class=>"sub"}mo
+                    %div{:class=>"most-popular"}
+                        %span 
+                            %p Popular
+                    %div{:class=>"info"}
+                        %ul
+                            %li{:class=>"bold"} Full Email Support
+                            %li{:class=>"bold"}Unlimited User Interactions
+                            %li{:class=>"bold"}Unlimited Pages
+                            %li Mobile Store
+                            %li Social Tracking
+                            %li{:class=>"signup"}
+                                = link_to "SIGN UP", "#"
+
+            %div{:class=>"span3"}
+                %div{:class=>"price-plan price-plan-business"}
+                    %h2 BEST
+                    %div{:class=>"price"}
+                        %div{:class=>"inside"}
+                            %span{:class=>"super"}$
+                            %span{:class=>"amt"}24
+                            %span{:class=>"sub"}mo
+                    
+                    %div{:class=>"info"}
+                        %ul
+                            %li{:class=>"bold"} Full Email Support
+                            %li{:class=>"bold"}Ecommerce Addons
+                            %li 2 GB Storage
+                            %li Custom Domain 
+                            %span{:class=>"free"}Free
+                            %li 24/7 Support
+                            %li &nbsp;
+                            %li &npsp;
+                            %li{:class=>"signup"}
+                                = link_to "SIGN UP", "#"
+
+            %div{:class=>"span3"}
+                %div{:class=>"price-plan price-plan-unlimited"}
+                    %h2 POPULAR
+                    %div{:class=>"price"}
+                        %div{:class=>"inside"}
+                            %span{:class=>"super"}$
+                            %span{:class=>"amt"}16
+                            %span{:class=>"sub"}mo
+                    %div{:class=>"most-popular"}
+                        %span
+                            %p New
+                    
+                    %div{:class=>"info"}
+                        %ul
+                            %li{:class=>"bold"} Unlimited Pages & Posts
+                            %li{:class=>"bold"}Unlimited Bandwidth
+                            %li 2 GB Storage
+                            %li Custom Domain 
+                            %span{:class=>"free"}Free
+                            %li 24/7 Support
+                            %li Responsive Website<
+                            %li 24x7 Support
+                            %li{:class=>"signup"}
+                                = link_to "SIGN UP", "#"
